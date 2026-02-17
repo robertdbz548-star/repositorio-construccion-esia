@@ -1,6 +1,6 @@
 :root {
-    --primary: #004aad; /* AZUL INSTITUCIONAL */
-    --accent: #ff6b00;  /* NARANJA SEGURIDAD */
+    --primary: #004aad; /* TU AZUL */
+    --accent: #ff6b00;  /* TU NARANJA */
     --dark: #0f172a;
     --light: #f8fafc;
     --white: #ffffff;
@@ -22,34 +22,41 @@ body { font-family: 'Poppins', sans-serif; background: var(--light); color: var(
     top: 0;
     z-index: 2000;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    border-bottom: 3px solid var(--accent);
+    border-bottom: 4px solid var(--accent);
 }
 
-/* NUEVO LOGO ESTILO PLACA */
-.logo-badge {
+/* --- NUEVO LOGO ESTILO CONSTRUCTORA --- */
+.titan-logo {
     display: flex;
-    align-items: center;
-    background: rgba(0,0,0,0.2);
-    padding: 8px 15px;
-    border-radius: 6px;
-    border: 1px solid rgba(255,255,255,0.2);
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--white);
+    padding: 2px 10px;
+    background: rgba(255,255,255,0.05);
 }
-.logo-icon { font-size: 1.8rem; margin-right: 12px; }
-.logo-titles { display: flex; flex-direction: column; line-height: 1; }
-.main-title {
+
+.logo-top {
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
     color: var(--white);
-    font-weight: 900;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
 }
-.sub-title {
-    font-family: 'Montserrat', sans-serif;
+
+.logo-bottom {
+    font-family: 'Teko', sans-serif; /* Fuente alta y fuerte */
+    font-size: 1.8rem;
     color: var(--accent);
+    line-height: 0.9;
     font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
 }
+/* ------------------------------------- */
 
 .nav-links { list-style: none; display: flex; gap: 25px; }
 .nav-links a { text-decoration: none; color: var(--white); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; transition: 0.3s; }
@@ -70,10 +77,10 @@ body { font-family: 'Poppins', sans-serif; background: var(--light); color: var(
 .btn-hero { background: var(--accent); color: var(--white); padding: 15px 40px; text-decoration: none; font-weight: 800; text-transform: uppercase; border-radius: 50px; transition: 0.3s; box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3); }
 .btn-hero:hover { transform: translateY(-5px); background: #e66000; }
 
-/* SECCIONES */
+/* PURPOSE */
 .purpose { background: var(--white); padding: 60px 0; text-align: center; border-bottom: 5px solid var(--primary); }
 .container { max-width: 1200px; margin: auto; padding: 0 20px; }
-.purpose h2 { font-family: 'Montserrat', sans-serif; color: var(--primary); margin-bottom: 20px; }
+.purpose h2 { font-family: 'Montserrat', sans-serif; color: var(--primary); margin-bottom: 20px; text-transform: uppercase; }
 .purpose p { max-width: 800px; margin: auto; font-size: 1.1rem; }
 
 /* ZIG-ZAG LAYOUT */
@@ -88,7 +95,7 @@ body { font-family: 'Poppins', sans-serif; background: var(--light); color: var(
 .topic-content h2 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 20px; color: var(--primary); }
 .topic-desc { margin-bottom: 30px; font-size: 1.05rem; border-left: 4px solid var(--accent); padding-left: 15px; }
 
-/* MINI GRID (TUS ENLACES) */
+/* MINI GRID */
 .mini-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; }
 .mini-link { background: var(--white); text-decoration: none; color: var(--dark); border-radius: 8px; overflow: hidden; border: 1px solid #e2e8f0; transition: 0.3s; text-align: center; box-shadow: 0 5px 10px rgba(0,0,0,0.05); }
 .mini-link img { width: 100%; height: 90px; object-fit: cover; background: #ddd; }
