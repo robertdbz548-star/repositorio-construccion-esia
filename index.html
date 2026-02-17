@@ -3,189 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingeniería Moderna | Cruz & Pérez</title>
+    <title>Estructura y desarrollo de México | Cruz & Pérez</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="brand-logo">
-            <svg class="logo-svg" width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 5 L95 27.5 V72.5 L50 95 L5 72.5 V27.5 Z" fill="#004aad" stroke="#ff6b00" stroke-width="4"/>
-                <path d="M50 20 V80 M25 35 L75 35 M25 65 L75 65 M50 20 L25 65 M50 20 L75 65" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
-            </svg>
-            <div class="logo-text">
-                INGENIERÍA<br><span class="highlight">MODERNA</span>
-            </div>
+            <span class="logo-icon">⚙️</span> IC-<span>MX</span> | ESIA
         </div>
-
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#geopolitica">Geopolítica</a></li>
-            <li><a href="#cicm">CICM</a></li>
-            <li><a href="#innovacion">Innovación</a></li>
+            <li><a href="#temas">Ejes Técnicos</a></li>
+            <li><a href="#repositorio">Sitios de Interés</a></li>
             <li><a href="#autores">Autores</a></li>
         </ul>
     </nav>
 
     <header id="inicio" class="hero">
         <div class="hero-overlay">
-            <div class="hero-content">
-                <p class="subtitle">REPOSITORIO ACADÉMICO ESIA</p>
-                <h1>INGENIERÍA<br><span>MODERNA</span></h1>
-                <div class="hero-line"></div>
-                <p class="intro">Análisis estratégico de la infraestructura en la Estructura y Desarrollo de México.</p>
-                <a href="#geopolitica" class="btn-hero">Ver Ejes Temáticos</a>
+            <div class="hero-text">
+                <span class="badge">Repositorio Académico</span>
+                <h1>Ingeniería <span>Moderna</span></h1>
+                <p>Análisis de Infraestructura en la Estructura y Desarrollo de México</p>
+                <div class="hero-btns">
+                    <a href="#temas" class="btn-primary">Ver Temas</a>
+                    <a href="#autores" class="btn-secondary">Contacto</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="purpose">
+    <section class="purpose-section">
         <div class="container">
-            <h2>PROPÓSITO DEL SITIO</h2>
-            <p>Este espacio digital ha sido diseñado por Cruz Morales Roberto y Pérez Soriano Darian para compilar información técnica estratégica. Es una actividad académica para la asignatura de <strong>Estructura y desarrollo de México</strong>, enfocada en el análisis crítico de la infraestructura nacional sin fines de lucro.</p>
+            <h2>Propósito del Sitio</h2>
+            <p>Este espacio digital ha sido diseñado por Cruz Morales Roberto y Pérez Soriano Darian para compilar información técnica estratégica sobre la industria de la construcción. Es una actividad académica desarrollada para la asignatura de <strong>Estructura y desarrollo de México</strong>.</p>
         </div>
     </section>
 
-    <main>
+    <main id="temas" class="container">
         
-        <section id="geopolitica" class="topic-row">
-            <div class="topic-media" style="background-image: url('https://images.unsplash.com/photo-1574267432553-4b4628081c31?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-            <div class="topic-content">
-                <span class="topic-num">01</span>
-                <h2>MÉXICO EN LA GEOPOLÍTICA</h2>
-                <p class="topic-desc"><strong>El Tren Interoceánico:</strong> La columna vertebral del comercio moderno. Al unir Salina Cruz y Coatzacoalcos, México desafía al Canal de Panamá y se convierte en el líder del *nearshoring* en Norteamérica.</p>
-                
-                <div class="mini-grid">
-                    <a href="https://www.gob.mx/ciit" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1474487548417-781cb714d22d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Vías Tren">
-                        <span>CIIT: Corredor</span>
-                    </a>
-                    <a href="https://www.gob.mx/t-mec" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Negocios">
-                        <span>T-MEC: Tratado</span>
-                    </a>
-                    <a href="https://www.gob.mx/sct" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1519817914152-22d216bb9170?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Puerto Carga">
-                        <span>SICT: Puertos</span>
-                    </a>
-                    <a href="https://www.cmic.org.mx/ceesco/" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Logística">
-                        <span>CEESCO: Datos</span>
-                    </a>
-                </div>
+        <section class="main-topic">
+            <div class="topic-header">
+                <span class="topic-number">01</span>
+                <h2>México en la Geopolítica Mundial</h2>
+            </div>
+            <div class="topic-analysis">
+                <p><strong>Impacto Geopolítico del Tren Interoceánico:</strong> Esta obra representa un activo de soberanía nacional que conecta estratégicamente los puertos de Salina Cruz y Coatzacoalcos. Al posicionar a México como el nodo central del *nearshoring* en el T-MEC, ofrece una ruta logística clave para el comercio global.</p>
+            </div>
+            <div class="links-grid">
+                <a href="https://www.gob.mx/ciit" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=400&q=80" alt="CIIT Tren">
+                    <span>CIIT:</span> Corredor Estratégico
+                </a>
+                <a href="https://www.gob.mx/t-mec" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&q=80" alt="T-MEC">
+                    <span>T-MEC:</span> Marco Comercial
+                </a>
+                <a href="https://www.gob.mx/sct" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1524522173746-f628baad3644?w=400&q=80" alt="Puerto Industrial">
+                    <span>SICT:</span> Puertos y Marina
+                </a>
+                <a href="https://www.cmic.org.mx/ceesco/" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&q=80" alt="Logística">
+                    <span>CEESCO:</span> Análisis Nearshoring
+                </a>
             </div>
         </section>
 
-        <section id="cicm" class="topic-row reverse section-bg">
-            <div class="topic-media" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-            <div class="topic-content">
-                <span class="topic-num">02</span>
-                <h2>PROPUESTAS CICM</h2>
-                <p class="topic-desc">El Colegio de Ingenieros Civiles de México define la ética y la técnica. Sus propuestas buscan una infraestructura resiliente, segura y sostenible para el futuro del país.</p>
-                
-                <div class="mini-grid">
-                    <a href="https://cicm.org.mx/" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Planos">
-                        <span>Sitio Oficial</span>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=1U1AYzQgjWM" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Tecnología">
-                        <span>Video: Calidad</span>
-                    </a>
-                    <a href="https://www.femcic.org/" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Reunión">
-                        <span>FEMCIC</span>
-                    </a>
-                    <a href="https://www.smie.org.mx/" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Edificio">
-                        <span>SMIE: Estructuras</span>
-                    </a>
-                </div>
+        <section class="main-topic">
+            <div class="topic-header">
+                <span class="topic-number">02</span>
+                <h2>Propuestas de Infraestructura (CICM)</h2>
+            </div>
+            <div class="topic-analysis">
+                <p>El Colegio de Ingenieros Civiles de México impulsa propuestas de resiliencia estructural y ética en la obra pública, fundamentales para el desarrollo sostenible del país.</p>
+            </div>
+            <div class="links-grid">
+                <a href="https://cicm.org.mx/" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&q=80" alt="Construcción">
+                    <span>CICM:</span> Sitio Oficial
+                </a>
+                <a href="https://www.youtube.com/watch?v=1U1AYzQgjWM" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&q=80" alt="Video">
+                    <span>Video:</span> Visión de Calidad
+                </a>
+                <a href="https://www.femcic.org/" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&q=80" alt="Junta">
+                    <span>FEMCIC:</span> Federaciones Civiles
+                </a>
+                <a href="https://www.smie.org.mx/" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80" alt="Estructura">
+                    <span>SMIE:</span> Ingeniería Estructural
+                </a>
             </div>
         </section>
 
-        <section id="innovacion" class="topic-row">
-            <div class="topic-media" style="background-image: url('https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-            <div class="topic-content">
-                <span class="topic-num">03</span>
-                <h2>INNOVACIÓN CIVIL</h2>
-                <p class="topic-desc">El futuro es hoy: digitalización mediante BIM, uso de drones para supervisión, impresión 3D y nuevos materiales inteligentes. Estas herramientas redefinen costos y seguridad.</p>
-                
-                <div class="mini-grid">
-                    <a href="https://hubtecnologico.com/" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Hub">
-                        <span>Hub Tecnológico</span>
-                    </a>
-                    <a href="https://www.arcus-global.com/" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Arcus">
-                        <span>Arcus Global</span>
-                    </a>
-                    <a href="https://www.gob.mx/imt" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="IMT">
-                        <span>IMT Transporte</span>
-                    </a>
-                    <a href="https://blog.vise.com.mx/" target="_blank" class="mini-link">
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Vise">
-                        <span>Vise: Avances</span>
-                    </a>
-                </div>
+        <section class="main-topic">
+            <div class="topic-header">
+                <span class="topic-number">03</span>
+                <h2>Innovaciones en la Construcción</h2>
+            </div>
+            <div class="links-grid">
+                <a href="https://hubtecnologico.com/" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&q=80" alt="Hub Tech">
+                    <span>Hub:</span> Innovación Civil
+                </a>
+                <a href="https://www.arcus-global.com/" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80" alt="Tecnología">
+                    <span>Arcus:</span> Tecnología Global
+                </a>
+                <a href="https://www.gob.mx/imt" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=80" alt="Data">
+                    <span>IMT:</span> Innovación Transporte
+                </a>
+                <a href="https://blog.vise.com.mx/" target="_blank" class="info-link">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80" alt="Vise">
+                    <span>Vise:</span> Avances en Obra
+                </a>
             </div>
         </section>
 
     </main>
 
-    <section class="full-repo">
+    <section id="repositorio" class="full-repo">
         <div class="container">
-            <h3>SITIOS DE INTERÉS</h3>
-            <div class="repo-grid">
+            <h2 class="section-title">Sitios de Interés</h2>
+            <div class="repo-links">
                 <div class="repo-card">
                     <h4>Academia e Investigación</h4>
                     <ul>
                         <li><a href="https://www.sepi.esiaz.ipn.mx/" target="_blank">SEPI - ESIA Zacatenco</a></li>
                         <li><a href="http://www.iingen.unam.mx/" target="_blank">Instituto de Ingeniería UNAM</a></li>
-                        <li><a href="https://www.mit.edu/" target="_blank">MIT Engineering Global</a></li>
+                        <li><a href="https://www.gob.mx/cenapred" target="_blank">CENAPRED: Prevención de Desastres</a></li>
                         <li><a href="http://www.smig.org.mx/" target="_blank">SMIG: Ingeniería Geotécnica</a></li>
-                        <li><a href="https://www.gob.mx/cenapred" target="_blank">CENAPRED: Prevención</a></li>
-                        <li><a href="https://www.amivtac.org/" target="_blank">AMIVTAC: Vías Terrestres</a></li>
+                        <li><a href="https://www.mit.edu/" target="_blank">MIT Engineering Global</a></li>
                     </ul>
                 </div>
                 <div class="repo-card">
                     <h4>Organismos Federales</h4>
                     <ul>
                         <li><a href="https://www.gob.mx/conagua" target="_blank">CONAGUA: Recursos Hídricos</a></li>
+                        <li><a href="https://www.gob.mx/sedatu" target="_blank">SEDATU: Desarrollo Territorial</a></li>
+                        <li><a href="https://www.inegi.org.mx/" target="_blank">INEGI: Datos Geográficos</a></li>
+                        <li><a href="https://www.fonadin.gob.mx/" target="_blank">FONADIN: Infraestructura</a></li>
                         <li><a href="https://www.cfe.mx" target="_blank">CFE: Sector Energético</a></li>
                         <li><a href="https://www.gob.mx/banobras" target="_blank">BANOBRAS: Financiamiento</a></li>
-                        <li><a href="https://www.inegi.org.mx/" target="_blank">INEGI: Datos Geográficos</a></li>
-                        <li><a href="https://www.gob.mx/sedatu" target="_blank">SEDATU: Desarrollo Territorial</a></li>
-                        <li><a href="https://www.fonadin.gob.mx/" target="_blank">FONADIN: Infraestructura</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="autores">
-        <div class="footer-container">
-            <div class="authors-block">
-                <h4>AUTORES DEL SITIO</h4>
-                <div class="names">
-                    <p>Cruz Morales Roberto</p>
-                    <p>Pérez Soriano Darian</p>
+    <section id="autores" class="author-section">
+        <div class="container">
+            <div class="author-box">
+                <h2>Autores del Sitio</h2>
+                <div class="author-names">
+                    <div class="name-tag">Cruz Morales Roberto</div>
+                    <div class="name-tag">Pérez Soriano Darian</div>
                 </div>
-                <div class="meta">
-                    <p>ESIA Unidad Zacatenco | IPN</p>
-                    <p>Asignatura: Estructura y Desarrollo de México</p>
-                    <p>Contacto: <a href="mailto:robertomcruz.762@gmail.com">robertomcruz.762@gmail.com</a></p>
-                    <p class="date">Febrero 2026</p>
+                <div class="academic-list">
+                    <p><strong>Institución:</strong> ESIA Unidad Zacatenco, IPN</p>
+                    <p><strong>Asignatura:</strong> Estructura y desarrollo de México</p>
+                    <p><strong>Contacto:</strong> <a href="mailto:robertomcruz.762@gmail.com">robertomcruz.762@gmail.com</a></p>
+                    <p><strong>Última Actualización:</strong> 16 de Febrero de 2026</p>
                 </div>
-            </div>
-            <div class="ipn-brand">
-                <p>INGENIERÍA MODERNA</p>
-                <span>"LA TÉCNICA AL SERVICIO DE LA PATRIA"</span>
             </div>
         </div>
+    </section>
+
+    <footer>
+        <p>IPN - "LA TÉCNICA AL SERVICIO DE LA PATRIA"</p>
     </footer>
 
 </body>
