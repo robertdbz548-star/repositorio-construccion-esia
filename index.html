@@ -3,186 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grandes Empresas, Grandes Soluciones | ESIA IPN</title>
+    <title>Estructura y Desarrollo de México | Cruz & Pérez</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo-container">
-            <div class="logo-box">
-                GE<br>GS
-            </div>
-            <div class="logo-text">
-                INGENIERÍA<br><span>CIVIL ESIA</span>
-            </div>
+        <div class="brand">
+            <div class="brand-icon">///</div>
+            <div class="brand-text">INGENIERÍA<span>MX</span></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#empresas">Corporativos</a></li>
-            <li><a href="#innovacion">Futuro</a></li>
-            <li><a href="#ia">Inteligencia Artificial</a></li>
-            <li><a href="#sitios">Interés</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#geopolitica">Geopolítica</a></li>
+            <li><a href="#cicm">CICM</a></li>
+            <li><a href="#innovacion">Innovación</a></li>
+            <li><a href="#autores">Autores</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
+    <header id="inicio" class="hero">
         <div class="hero-content">
-            <span class="tagline">Estructura y Desarrollo de México</span>
-            <h1>GRANDES EMPRESAS<br><span class="highlight">GRANDES SOLUCIONES</span></h1>
-            <p>Un análisis profundo sobre los gigantes de la construcción, la disrupción tecnológica y la era de la IA en la ingeniería.</p>
-            <div class="hero-actions">
-                <a href="#empresas" class="btn-main">Iniciar Recorrido</a>
-                <a href="#contacto" class="btn-outline">Ver Autoras</a>
-            </div>
+            <p class="subtitle">REPOSITORIO ACADÉMICO ESIA</p>
+            <h1>ESTRUCTURA<br>Y DESARROLLO<br><span class="highlight">DE MÉXICO</span></h1>
+            <div class="hero-line"></div>
+            <p class="intro">Análisis estratégico sobre la infraestructura nacional, la geopolítica del Istmo y el futuro tecnológico de la construcción.</p>
+            <a href="#geopolitica" class="btn-hero">Explorar Temas</a>
         </div>
     </header>
 
-    <main>
-        <section id="empresas" class="section-dark">
-            <div class="container">
-                <h2 class="section-title">01. EMPRESAS LÍDERES <span class="dot">.</span></h2>
-                <p class="section-desc">Las corporaciones que definen el horizonte de la infraestructura en México y el mundo.</p>
+    <section class="purpose">
+        <div class="container">
+            <h2>OBJETIVO DEL PROYECTO</h2>
+            <p>Este sitio web compila investigación técnica de alto nivel para la asignatura de <strong>Estructura y Desarrollo de México</strong>. Desarrollado por <strong>Cruz Morales Roberto</strong> y <strong>Pérez Soriano Darian</strong>, busca entender los retos actuales de la ingeniería civil.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <section id="geopolitica" class="topic-row">
+            <div class="topic-img">
+                <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=600&q=80" alt="Tren CIIT">
+            </div>
+            <div class="topic-content">
+                <span class="topic-num">01</span>
+                <h2>MÉXICO EN LA GEOPOLÍTICA</h2>
+                <p><strong>El Tren Interoceánico:</strong> La columna vertebral del comercio moderno. Al unir Salina Cruz y Coatzacoalcos, México desafía al Canal de Panamá y se convierte en el líder del *nearshoring*.</p>
                 
-                <div class="wide-grid">
-                    <a href="https://www.cemex.com/" target="_blank" class="card-wide">
-                        <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=600&q=80');"></div>
-                        <div class="card-info">
-                            <h3>CEMEX</h3>
-                            <p>Innovación mexicana en materiales con presencia global.</p>
-                        </div>
-                    </a>
-                    <a href="https://www.grupocarso.com.mx/" target="_blank" class="card-wide">
-                        <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80');"></div>
-                        <div class="card-info">
-                            <h3>GRUPO CARSO</h3>
-                            <p>Infraestructura crítica y desarrollo industrial (CICSA).</p>
-                        </div>
-                    </a>
-                    <a href="https://www.vinci.com/" target="_blank" class="card-wide">
-                        <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80');"></div>
-                        <div class="card-info">
-                            <h3>VINCI Construction</h3>
-                            <p>Líder mundial francés en concesiones y energía.</p>
-                        </div>
-                    </a>
-                    <a href="https://www.ica.mx/" target="_blank" class="card-wide">
-                        <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80');"></div>
-                        <div class="card-info">
-                            <h3>ICA</h3>
-                            <p>Ingenieros Civiles Asociados: Historia de la obra pública nacional.</p>
-                        </div>
-                    </a>
+                <div class="mini-links">
+                    <a href="https://www.gob.mx/ciit" target="_blank">CIIT: Corredor</a>
+                    <a href="https://www.gob.mx/t-mec" target="_blank">T-MEC: Tratado</a>
+                    <a href="https://www.gob.mx/sct" target="_blank">SICT: Puertos</a>
+                    <a href="https://www.cmic.org.mx/ceesco/" target="_blank">CEESCO: Datos</a>
                 </div>
             </div>
         </section>
 
-        <section id="innovacion" class="section-light">
-            <div class="container">
-                <h2 class="section-title text-dark">02. INNOVACIÓN EN INFRAESTRUCTURA <span class="dot-red">.</span></h2>
-                <p class="section-desc text-dark">Nuevos materiales y métodos que rompen paradigmas.</p>
-
-                <div class="mosaic-grid">
-                    <a href="https://hubtecnologico.com/" target="_blank" class="mosaic-item">
-                        <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=500&q=80" alt="Tech">
-                        <div class="overlay">
-                            <h4>Hub Tecnológico</h4>
-                            <span>Tendencias Disruptivas</span>
-                        </div>
-                    </a>
-                    <a href="https://www.3dnatives.com/es/construccion-impresion-3d-hormigon-150620202/" target="_blank" class="mosaic-item">
-                        <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&q=80" alt="3D">
-                        <div class="overlay">
-                            <h4>Impresión 3D</h4>
-                            <span>Construcción Aditiva</span>
-                        </div>
-                    </a>
-                    <a href="https://blog.laminasyaceros.com/" target="_blank" class="mosaic-item">
-                        <img src="https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?w=500&q=80" alt="Materiales">
-                        <div class="overlay">
-                            <h4>Nuevos Materiales</h4>
-                            <span>Aceros y Aleaciones</span>
-                        </div>
-                    </a>
-                    <a href="https://www.bbva.com/es/sostenibilidad/construccion-sostenible-que-es-y-cuales-son-sus-beneficios/" target="_blank" class="mosaic-item">
-                        <img src="https://images.unsplash.com/photo-1518544806314-5360974362b3?w=500&q=80" alt="Eco">
-                        <div class="overlay">
-                            <h4>Sustentabilidad</h4>
-                            <span>Edificación Verde</span>
-                        </div>
-                    </a>
+        <section id="cicm" class="topic-row reverse">
+            <div class="topic-img">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Construcción">
+            </div>
+            <div class="topic-content">
+                <span class="topic-num">02</span>
+                <h2>PROPUESTAS CICM</h2>
+                <p>El Colegio de Ingenieros Civiles de México define la ética y la técnica. Sus propuestas buscan una infraestructura resiliente, segura y sostenible para el futuro del país.</p>
+                
+                <div class="mini-links">
+                    <a href="https://cicm.org.mx/" target="_blank">Sitio Oficial CICM</a>
+                    <a href="https://www.youtube.com/watch?v=1U1AYzQgjWM" target="_blank">Video: Calidad</a>
+                    <a href="https://www.femcic.org/" target="_blank">FEMCIC</a>
+                    <a href="https://www.smie.org.mx/" target="_blank">SMIE: Estructuras</a>
                 </div>
             </div>
         </section>
 
-        <section id="ia" class="section-dark">
-            <div class="container">
-                <h2 class="section-title">03. IA EN INGENIERÍA CIVIL <span class="dot">.</span></h2>
-                <p class="section-desc">Algoritmos, Big Data y el futuro del diseño estructural.</p>
-
-                <div class="tech-links">
-                    <a href="https://www.autodesk.com/solutions/generative-design" target="_blank" class="tech-card">
-                        <div class="icon">🧠</div>
-                        <h4>Autodesk: Diseño Generativo</h4>
-                        <p>Optimización de estructuras mediante algoritmos evolutivos.</p>
-                    </a>
-                    <a href="https://www.ibm.com/industries/construction" target="_blank" class="tech-card">
-                        <div class="icon">📊</div>
-                        <h4>IBM: Smarter Build</h4>
-                        <p>Gestión predictiva de activos y obras.</p>
-                    </a>
-                    <a href="https://www.oracle.com/industries/construction-engineering/" target="_blank" class="tech-card">
-                        <div class="icon">🌐</div>
-                        <h4>Oracle Construction</h4>
-                        <p>Nube inteligente para megaproyectos.</p>
-                    </a>
-                    <a href="https://constructivo.com/noticia/como-la-inteligencia-artificial-esta-cambiando-la-ingenieria-civil" target="_blank" class="tech-card">
-                        <div class="icon">🤖</div>
-                        <h4>Impacto IA</h4>
-                        <p>El futuro de la automatización en obra.</p>
-                    </a>
+        <section id="innovacion" class="topic-row">
+            <div class="topic-img">
+                <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=600&q=80" alt="Tecnología">
+            </div>
+            <div class="topic-content">
+                <span class="topic-num">03</span>
+                <h2>INNOVACIÓN CIVIL</h2>
+                <p>El futuro es hoy: BIM, Drones, Materiales Inteligentes y Tecnología 3D. Estas herramientas están redefiniendo costos, tiempos y seguridad en obra.</p>
+                
+                <div class="mini-links">
+                    <a href="https://hubtecnologico.com/" target="_blank">Hub Tecnológico</a>
+                    <a href="https://www.arcus-global.com/" target="_blank">Arcus Global</a>
+                    <a href="https://www.gob.mx/imt" target="_blank">IMT Transporte</a>
+                    <a href="https://blog.vise.com.mx/" target="_blank">Vise: Blog</a>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <section id="sitios" class="repo-section">
+    <section class="repo-section">
         <div class="container">
-            <h3>SITIOS DE INTERÉS ACADÉMICO</h3>
-            <div class="repo-list">
-                <div class="repo-col">
-                    <h4>Gremiales</h4>
-                    <ul>
-                        <li><a href="https://www.cmic.org/" target="_blank">Cámara Mexicana de la Industria de la Construcción (CMIC)</a></li>
-                        <li><a href="https://cicm.org.mx/" target="_blank">Colegio de Ingenieros Civiles de México (CICM)</a></li>
-                    </ul>
+            <h3>SITIOS DE INTERÉS</h3>
+            <div class="repo-grid">
+                <div class="repo-item">
+                    <h4>Academia</h4>
+                    <a href="https://www.sepi.esiaz.ipn.mx/" target="_blank">SEPI ESIA Zacatenco</a>
+                    <a href="http://www.iingen.unam.mx/" target="_blank">Instituto de Ingeniería UNAM</a>
+                    <a href="https://www.mit.edu/" target="_blank">MIT Engineering</a>
+                    <a href="http://www.smig.org.mx/" target="_blank">SMIG Geotecnia</a>
                 </div>
-                <div class="repo-col">
-                    <h4>Investigación</h4>
-                    <ul>
-                        <li><a href="https://www.sepi.esiaz.ipn.mx/" target="_blank">SEPI - ESIA Zacatenco</a></li>
-                        <li><a href="http://www.iingen.unam.mx/" target="_blank">Instituto de Ingeniería UNAM</a></li>
-                        <li><a href="https://www.inegi.org.mx/" target="_blank">INEGI - Geografía</a></li>
-                    </ul>
+                <div class="repo-item">
+                    <h4>Gobierno</h4>
+                    <a href="https://www.gob.mx/conagua" target="_blank">CONAGUA</a>
+                    <a href="https://www.gob.mx/cenapred" target="_blank">CENAPRED</a>
+                    <a href="https://www.inegi.org.mx/" target="_blank">INEGI Datos</a>
+                    <a href="https://www.gob.mx/sedatu" target="_blank">SEDATU</a>
+                </div>
+                <div class="repo-item">
+                    <h4>Financiamiento</h4>
+                    <a href="https://www.gob.mx/banobras" target="_blank">BANOBRAS</a>
+                    <a href="https://www.fonadin.gob.mx/" target="_blank">FONADIN</a>
+                    <a href="https://www.cfe.mx" target="_blank">CFE Energía</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contacto" class="main-footer">
-        <div class="container footer-content">
-            <div class="brand-footer">
-                <h2>GE | GS</h2>
-                <p>ESIA ZACATENCO</p>
+    <footer id="autores">
+        <div class="footer-container">
+            <div class="authors-block">
+                <h4>AUTORES DEL SITIO</h4>
+                <div class="names">
+                    <p>Cruz Morales Roberto</p>
+                    <p>Pérez Soriano Darian</p>
+                </div>
+                <div class="meta">
+                    <p>ESIA Unidad Zacatenco | IPN</p>
+                    <p>Contacto: <a href="mailto:robertomcruz.762@gmail.com">robertomcruz.762@gmail.com</a></p>
+                    <p class="date">Actualizado: Febrero 2026</p>
+                </div>
             </div>
-            <div class="authors-info">
-                <h4>AUTORAS DEL SITIO</h4>
-                <p><strong>Flores Martinez Martha Karina</strong></p>
-                <p><strong>Villa Morales Isis Montserrat</strong></p>
-                <hr>
-                <p class="small-text">Asignatura: Estructura y Desarrollo de México</p>
-                <p class="small-text">Email: <a href="mailto:floreedkarina0@gmail.com">floreedkarina0@gmail.com</a></p>
-                <p class="disclaimer">Sitio académico sin fines de lucro. Febrero 2026.</p>
+            <div class="ipn-brand">
+                <p>"LA TÉCNICA AL SERVICIO DE LA PATRIA"</p>
             </div>
         </div>
     </footer>
