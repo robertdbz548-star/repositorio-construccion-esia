@@ -1,16 +1,16 @@
 :root {
-    --primary: #004aad; /* TU AZUL INSTITUCIONAL */
-    --accent: #ff6b00;  /* TU NARANJA DE SEGURIDAD */
+    --primary: #004aad; /* AZUL INSTITUCIONAL */
+    --accent: #ff6b00;  /* NARANJA SEGURIDAD */
     --dark: #0f172a;
     --light: #f8fafc;
     --white: #ffffff;
-    --bg-alt: #f0f4f8; /* Color de fondo alterno para el zig-zag */
+    --bg-alt: #f0f4f8;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
 body { font-family: 'Poppins', sans-serif; background: var(--light); color: var(--dark); line-height: 1.6; }
 
-/* NAVBAR AZUL */
+/* NAVBAR */
 .navbar {
     background: var(--primary);
     padding: 10px 5%;
@@ -22,32 +22,40 @@ body { font-family: 'Poppins', sans-serif; background: var(--light); color: var(
     top: 0;
     z-index: 2000;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-bottom: 3px solid var(--accent);
 }
 
-/* NUEVO LOGO "INGENIERÍA MODERNA" */
-.modern-logo {
+/* NUEVO LOGO ESTILO PLACA */
+.logo-badge {
     display: flex;
     align-items: center;
-    background: rgba(255,255,255,0.1);
-    padding: 5px 15px;
-    border-radius: 8px;
-    border: 2px solid var(--accent);
+    background: rgba(0,0,0,0.2);
+    padding: 8px 15px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.2);
 }
-.modern-logo .icon { font-size: 2rem; margin-right: 10px; }
-.modern-logo .text {
+.logo-icon { font-size: 1.8rem; margin-right: 12px; }
+.logo-titles { display: flex; flex-direction: column; line-height: 1; }
+.main-title {
     font-family: 'Montserrat', sans-serif;
     color: var(--white);
-    font-weight: 800;
-    line-height: 1;
-    font-size: 1rem;
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
-.modern-logo .text span { color: var(--accent); font-size: 1.2rem; }
+.sub-title {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
 
 .nav-links { list-style: none; display: flex; gap: 25px; }
 .nav-links a { text-decoration: none; color: var(--white); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; transition: 0.3s; }
 .nav-links a:hover { color: var(--accent); }
 
-/* HERO AZUL/NARANJA */
+/* HERO */
 .hero {
     height: 85vh;
     background: linear-gradient(to bottom, rgba(0, 74, 173, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600&q=80') center/cover;
@@ -62,16 +70,16 @@ body { font-family: 'Poppins', sans-serif; background: var(--light); color: var(
 .btn-hero { background: var(--accent); color: var(--white); padding: 15px 40px; text-decoration: none; font-weight: 800; text-transform: uppercase; border-radius: 50px; transition: 0.3s; box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3); }
 .btn-hero:hover { transform: translateY(-5px); background: #e66000; }
 
-/* PURPOSE */
+/* SECCIONES */
 .purpose { background: var(--white); padding: 60px 0; text-align: center; border-bottom: 5px solid var(--primary); }
 .container { max-width: 1200px; margin: auto; padding: 0 20px; }
 .purpose h2 { font-family: 'Montserrat', sans-serif; color: var(--primary); margin-bottom: 20px; }
 .purpose p { max-width: 800px; margin: auto; font-size: 1.1rem; }
 
-/* ESTRUCTURA ZIG-ZAG (Con tus colores) */
+/* ZIG-ZAG LAYOUT */
 .topic-row { display: flex; align-items: stretch; min-height: 500px; }
 .topic-row.reverse { flex-direction: row-reverse; }
-.section-bg { background: var(--bg-alt); } /* Fondo alterno para el zig-zag */
+.section-bg { background: var(--bg-alt); }
 
 .topic-media { flex: 1; background-size: cover; background-position: center; min-height: 400px; }
 .topic-content { flex: 1; padding: 60px 40px; display: flex; flex-direction: column; justify-content: center; }
@@ -80,14 +88,14 @@ body { font-family: 'Poppins', sans-serif; background: var(--light); color: var(
 .topic-content h2 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 20px; color: var(--primary); }
 .topic-desc { margin-bottom: 30px; font-size: 1.05rem; border-left: 4px solid var(--accent); padding-left: 15px; }
 
-/* TUS 4 ENLACES EN MINI-GRID */
+/* MINI GRID (TUS ENLACES) */
 .mini-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; }
 .mini-link { background: var(--white); text-decoration: none; color: var(--dark); border-radius: 8px; overflow: hidden; border: 1px solid #e2e8f0; transition: 0.3s; text-align: center; box-shadow: 0 5px 10px rgba(0,0,0,0.05); }
-.mini-link img { width: 100%; height: 90px; object-fit: cover; }
+.mini-link img { width: 100%; height: 90px; object-fit: cover; background: #ddd; }
 .mini-link span { display: block; color: var(--primary); font-size: 0.7rem; text-transform: uppercase; font-weight: 800; padding: 10px 5px; }
-.mini-link:hover { border-color: var(--accent); transform: translateY(-5px); }
+.mini-link:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
 
-/* REPOSITORIO COMPLETO (Estilo Azul) */
+/* REPOSITORIO COMPLETO */
 .full-repo { background: var(--primary); color: var(--white); padding: 80px 0; }
 .full-repo h3 { font-family: 'Montserrat', sans-serif; font-size: 2.2rem; text-align: center; margin-bottom: 50px; color: var(--accent); }
 .repo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
@@ -97,7 +105,7 @@ body { font-family: 'Poppins', sans-serif; background: var(--light); color: var(
 .repo-card a { color: #cbd5e1; text-decoration: none; transition: 0.3s; display: block; }
 .repo-card a:hover { color: var(--white); padding-left: 5px; }
 
-/* FOOTER NUEVO (Con tus datos) */
+/* FOOTER */
 footer { background: var(--dark); padding: 60px 0; border-top: 5px solid var(--accent); color: var(--white); }
 .footer-container { max-width: 1000px; margin: auto; text-align: center; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 30px; }
 .authors-block { text-align: left; }
